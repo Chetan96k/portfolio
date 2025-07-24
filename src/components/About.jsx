@@ -32,15 +32,15 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-[60vh] border-b-[12px] border-gray-200 bg-white flex flex-col md:flex-row"
+      className="min-h-[60vh] border-b-[12px] border-gray-200 dark:border-gray-800 flex flex-col md:flex-row"
     >
       {/* Left Side: Info */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start px-6 md:px-16 text-center md:text-left">
-        <h2 className="text-4xl md:text-5xl font-semibold mb-10 pb-3 pt-14 md:pt-0">
+        <h2 className="text-4xl md:text-5xl font-semibold mb-10 pb-3 pt-14 md:pt-0 text-black dark:text-white">
           About Me
         </h2>
 
-        <p className="max-w-md text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+        <p className="max-w-md text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
           I'm <span className="font-semibold">Chetan</span>, a passionate
           Frontend Developer who builds fast, accessible, and beautiful
           websites. I focus on clean design and performance, inspired by minimal
@@ -53,10 +53,11 @@ export default function About() {
         <div className="mt-10 w-full overflow-hidden relative pb-6 md:pb-0">
           <div
             className="flex flex-nowrap relative 
-  before:absolute before:left-0 before:h-full before:z-10 before:bg-gradient-to-r before:from-white before:to-transparent
-  after:absolute after:right-0 after:h-full after:z-10 after:bg-gradient-to-l after:from-white after:to-transparent
-  before:w-16 md:before:w-32
-  after:w-16 md:after:w-32"
+    before:absolute before:left-0 before:h-full before:z-10 
+    before:bg-gradient-to-r before:from-white before:dark:from-black before:to-transparent
+    after:absolute after:right-0 after:h-full after:z-10 
+    after:bg-gradient-to-l after:from-white after:dark:from-black after:to-transparent
+    before:w-16 after:w-16"
           >
             <ul
               ref={logosRef}
@@ -112,8 +113,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* Right Side: Fullscreen Image */}
-      {/* Right Side: Fullscreen Image */}
+      {/* Right Side: Image */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-6 md:p-10">
         <img
           src={me1}

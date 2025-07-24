@@ -1,42 +1,31 @@
 // src/components/Projects.jsx
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import foodOrderingAppLogo from "../assets/food-ordering-app.png";
+import portfolioLogo from "../assets/portfolio.png";
 
 const projects = [
   {
-    title: "E‑Commerce App",
-    description: "A modern shopping experience with real-time API integration.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRshwB_0h2wjtfTBF5zy_BebqURStzSeC6TRQ&s",
-    github: "https://github.com/Chetan96k/ecommerce-app",
-  },
-  {
     title: "Portfolio Site",
     description: "Clean, minimal design with React & Tailwind.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRshwB_0h2wjtfTBF5zy_BebqURStzSeC6TRQ&s",
-    github: "https://github.com/Chetan96k/portfolio",
+    image: portfolioLogo,
+    deploy: "https://chetankanti19.vercel.app/",
   },
   {
-    title: "Food Delivery",
+    title: "Food ordering App",
     description: "Swiggy‑style app with user location & menus.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRshwB_0h2wjtfTBF5zy_BebqURStzSeC6TRQ&s",
-    github: "https://github.com/Chetan96k/food-delivery",
-  },
-  {
-    title: "Notes App",
-    description: "CRUD note-taking with localStorage persistence.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRshwB_0h2wjtfTBF5zy_BebqURStzSeC6TRQ&s",
-    github: "https://github.com/Chetan96k/notes-app",
+    image: foodOrderingAppLogo,
+    deploy: "https://food-ordering-app-topc019.vercel.app/",
   },
 ];
-
 
 export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 px-6 bg-white border-b-[12px] border-gray-200"
+      className="py-24 px-6 border-b-[12px] border-gray-200 dark:border-gray-800"
     >
-      <h2 className="text-4xl md:text-5xl font-semibold mb-12 pb-3 text-center">
+      <h2 className="text-4xl md:text-5xl font-semibold mb-12 pb-3 text-center text-black dark:text-white">
         Projects
       </h2>
 

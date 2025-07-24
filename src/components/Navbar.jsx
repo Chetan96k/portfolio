@@ -19,19 +19,19 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50  shadow-sm w-full">
       {/* Navbar container */}
-      <div className="bg-white/50 backdrop-blur flex items-center justify-between md:justify-center h-14 w-full px-4">
+      <div className="bg-white/20 dark:bg-white/10 backdrop-blur flex items-center justify-between md:justify-center h-14 w-full px-4">
         {/* Logo - visible only in mobile */}
         <div className="text-lg font-semibold text-gray-700 md:hidden">Chetan</div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-8 font-medium text-sm text-gray-700">
+        <div className="hidden md:flex space-x-8 font-medium text-sm text-gray-700 dark:text-gray-200">
           {navLinks.map(({ href, label, external }) => (
             <a
               key={label}
               href={href}
               target={external ? "_blank" : "_self"}
               rel={external ? "noopener noreferrer" : ""}
-              className="hover:text-black transition"
+              className="hover:text-black dark:hover:text-white transition"
             >
               {label}
             </a>
@@ -48,14 +48,14 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-14 left-0 w-full px-6 py-4 space-y-3 text-gray-700 font-medium text-sm shadow-md z-40 bg-white/50 backdrop-blur">
+        <div className="md:hidden absolute top-14 left-0 w-full px-6 py-4 space-y-3 font-medium text-sm shadow-md z-40 bg-white/50 dark:bg-white/10 backdrop-blur text-gray-700 dark:text-gray-200">
           {navLinks.map(({ href, label, external }) => (
             <a
               key={label}
               href={href}
               target={external ? "_blank" : "_self"}
               rel={external ? "noopener noreferrer" : ""}
-              className="block hover:text-black transition"
+              className="block hover:text-black dark:hover:text-white transition"
               onClick={() => setIsOpen(false)}
             >
               {label}
