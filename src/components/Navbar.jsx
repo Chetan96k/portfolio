@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-export default function Navbar() {
+export default function Navbar({ isDark, toggleDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
@@ -17,14 +17,16 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50  shadow-sm w-full">
+    <nav className="sticky top-0 z-50 shadow-sm w-full">
       {/* Navbar container */}
-      <div className="bg-white/20 dark:bg-white/10 backdrop-blur flex items-center justify-between md:justify-center h-14 w-full px-4">
-        {/* Logo - visible only in mobile */}
-        <div className="text-lg font-semibold text-gray-700 md:hidden">Chetan</div>
+      <div className="relative bg-white/20 dark:bg-white/10 backdrop-blur h-14 w-full flex items-center px-4">
+        {/* Mobile Logo (left) */}
+        <div className="text-lg font-semibold text-gray-700 dark:text-gray-200 md:hidden">
+          Chetan
+        </div>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex space-x-8 font-medium text-sm text-gray-700 dark:text-gray-200">
+        {/* Desktop Nav Links (centered absolutely) */}
+        <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-8 font-medium text-sm text-gray-700 dark:text-gray-200">
           {navLinks.map(({ href, label, external }) => (
             <a
               key={label}
@@ -38,8 +40,27 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile menu icon */}
-        <div className="md:hidden">
+        {/* Dark Mode Button (right) - desktop only */}
+        <div className="hidden md:block absolute right-4">
+          <button
+            onClick={toggleDarkMode}
+            className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-800 text-sm dark:text-white shadow"
+          >
+            {isDark ? "Light Mode" : "Dark Mode"}
+          </button>
+        </div>
+
+        {/* Mobile controls (right) */}
+        <div className="flex items-center space-x-3 md:hidden ml-auto">
+          {/* Dark mode toggle button */}
+          <button
+            onClick={toggleDarkMode}
+            className="px-2 py-1 rounded bg-gray-200 dark:bg-gray-800 text-xs dark:text-white shadow"
+          >
+            {isDark ? "Light Mode" : "Dark Mode"}
+          </button>
+
+          {/* Menu icon */}
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

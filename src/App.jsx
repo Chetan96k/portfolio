@@ -35,15 +35,7 @@ export default function App() {
 
   return (
     <main className="min-h-screen bg-white text-black dark:bg-black dark:text-white font-sans transition-colors duration-300">
-      {/* Theme Toggle Button */}
-      <button
-        onClick={() => setIsDark(!isDark)}
-        className="fixed top-4 right-4 z-[999] px-3 py-1 rounded bg-gray-200 dark:bg-gray-800 text-sm dark:text-white shadow"
-      >
-        {isDark ? "Light Mode" : "Dark Mode"}
-      </button>
-
-      <Navbar />
+      <Navbar isDark={isDark} toggleDarkMode={() => setIsDark(!isDark)} />
       <Hero />
       <Projects />
       <About />
