@@ -40,14 +40,23 @@ export default function About() {
           About Me
         </h2>
 
-        <p className="max-w-md text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-          I'm <span className="font-semibold">Chetan</span>, a passionate
-          Frontend Developer who builds fast, accessible, and beautiful
-          websites. I focus on clean design and performance, inspired by minimal
-          and immersive interfaces like Apple’s. Currently exploring React,
-          Tailwind, and modern web technologies to deliver stunning digital
-          experiences.
-        </p>
+        <div className="max-w-md text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed space-y-4 mb-6">
+          <p>
+            I write code to solve problems—real ones that matter to teams and
+            users. I think good software should feel natural. It should help
+            without making a fuss.
+          </p>
+          <p>
+            Java and React are where I spend most of my time. I’m also drawn to
+            tools that improve clarity: clear docs, testable logic, and
+            interfaces that just make sense.
+          </p>
+          <p>
+            Outside the code, I’m always learning. Lately, I’ve been curious
+            about how AI can assist—not automate—the development process,
+            helping developers focus more on the work that really matters.
+          </p>
+        </div>
 
         {/* Infinite Logo Carousel with masking on both sides */}
         <div className="mt-10 w-full overflow-hidden relative pb-6 md:pb-0">

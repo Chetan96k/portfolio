@@ -12,7 +12,7 @@ const projects = [
     deploy: "https://chetankanti19.vercel.app/",
   },
   {
-    title: "Food ordering App",
+    title: "Food Ordering App",
     description: "Swiggy‑style app with user location & menus.",
     image: foodOrderingAppLogo,
     deploy: "https://food-ordering-app-topc019.vercel.app/",

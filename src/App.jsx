@@ -19,19 +19,19 @@ export default function App() {
     }
   }, [isDark]);
 
-  useEffect(() => {
-    const userPref = localStorage.getItem("theme");
-    if (userPref) {
-      setIsDark(userPref === "dark");
-    } else {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setIsDark(prefersDark);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const userPref = localStorage.getItem("theme");
+  //   if (userPref) {
+  //     setIsDark(userPref === "dark");
+  //   } else {
+  //     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  //     setIsDark(prefersDark);
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-  }, [isDark]);
+  // useEffect(() => {
+  //   localStorage.setItem("theme", isDark ? "dark" : "light");
+  // }, [isDark]);
 
   return (
     <main className="min-h-screen bg-white text-black dark:bg-black dark:text-white font-sans transition-colors duration-300">
