@@ -3,6 +3,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import foodOrderingAppLogo from "../assets/food-ordering-app.png";
 import portfolioLogo from "../assets/portfolio.png";
+import mernAuthLogo from "../assets/MERN-auth-app.png";
 
 const projects = [
   {
@@ -16,6 +17,12 @@ const projects = [
     description: "Swiggy‑style app with user location & menus.",
     image: foodOrderingAppLogo,
     deploy: "https://food-ordering-app-topc019.vercel.app/",
+  },
+  {
+    title: "MERN Authentication App",
+    description: "Full-stack MERN auth with JWT and middleware validation",
+    image: mernAuthLogo,
+    deploy: "https://mern-auth-app-blue.vercel.app/login",
   },
 ];
 
