@@ -14,13 +14,13 @@ const projects = [
   },
   {
     title: "Food Ordering App",
-    description: "Swiggy‑style app with user location & menus.",
+    description: "Swiggy‑style app with restaurants menu & add-to-cart feature.",
     image: foodOrderingAppLogo,
     deploy: "https://food-ordering-app-topc019.vercel.app/",
   },
   {
     title: "MERN Authentication App",
-    description: "Full-stack MERN auth with JWT and middleware validation",
+    description: "Full-stack MERN auth with JWT and middleware validation.",
     image: mernAuthLogo,
     deploy: "https://mern-auth-app-blue.vercel.app/login",
   },

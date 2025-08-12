@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import me1 from "../assets/me1.jpeg";
+import me5 from "../assets/me5.jpg";
 
 import htmlLogo from "../assets/html.png";
 import cssLogo from "../assets/css.png";
@@ -125,7 +125,7 @@ export default function About() {
       {/* Right Side: Image */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-6 md:p-10">
         <img
-          src={me1}
+          src={me5}
           alt="Chetan"
           className="w-full max-h-[700px] rounded-xl object-cover object-bottom"
         />
