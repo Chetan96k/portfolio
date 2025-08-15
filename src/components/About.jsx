@@ -126,8 +126,8 @@ export default function About() {
       <div className="w-full md:w-1/2 flex items-center justify-center p-6 md:p-10">
         <img
           src={me5}
-          alt="Chetan"
-          className="w-full max-h-[700px] rounded-xl object-cover object-bottom"
+          alt="Chetan Profile Picture"
+          className="w-full max-h-[800px] md:max-w-[80%] rounded-xl object-cover object-bottom"
         />
       </div>
     </section>
