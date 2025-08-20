@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import foodOrderingAppLogo from "../assets/food-ordering-app.png";
 import portfolioLogo from "../assets/portfolio.png";
 import mernAuthLogo from "../assets/MERN-auth-app.png";
+import gptflixLogo from "../assets/gptflix.png"
 
 const projects = [
   {
@@ -23,6 +24,12 @@ const projects = [
     description: "Full-stack MERN auth with JWT and middleware validation.",
     image: mernAuthLogo,
     deploy: "https://mern-auth-app-blue.vercel.app/login",
+  },
+  {
+    title: "GPTFLIX",
+    description: "Smart movie recommendation platform with modern UI.",
+    image: gptflixLogo,
+    deploy: "https://gptflix-ebon.vercel.app/",
   },
 ];
 
