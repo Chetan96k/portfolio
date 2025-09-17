@@ -27,9 +27,9 @@ const projects = [
   },
   {
     title: "GPTFLIX",
-    description: "Smart movie recommendation platform with modern UI.",
+    description: "AI movie recommendation platform with modern UI.",
     image: gptflixLogo,
-    deploy: "https://gptflix-ebon.vercel.app/",
+    deploy: "https://gptflix-dusky.vercel.app/",
   },
 ];
 
