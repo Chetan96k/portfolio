@@ -5,6 +5,8 @@ import foodOrderingAppLogo from "../assets/food-ordering-app.png";
 import portfolioLogo from "../assets/portfolio.png";
 import mernAuthLogo from "../assets/MERN-auth-app.png";
 import gptflixLogo from "../assets/gptflix.png"
+import emsLogo from "../assets/EMS.png";
+import blackjackLogo from "../assets/blackjackGame.png";
 
 const projects = [
   {
@@ -30,6 +32,18 @@ const projects = [
     description: "AI movie recommendation platform with modern UI.",
     image: gptflixLogo,
     deploy: "https://gptflix-dusky.vercel.app/",
+  },
+  {
+    title: "Employee Management System",
+    description: "A standalone application for managing employee records.",
+    image: emsLogo,
+    deploy: "https://github.com/Chetan96k/Capstone-EMS",
+  },
+  {
+    title: "Blackjack Game",
+    description: "A standalone application for playing Blackjack.",
+    image: blackjackLogo,
+    deploy: "https://github.com/Chetan96k/BlackJackGame",
   },
 ];
 
