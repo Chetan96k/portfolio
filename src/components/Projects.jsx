@@ -45,6 +45,7 @@ const projects = [
     image: blackjackLogo,
     deploy: "https://github.com/Chetan96k/BlackJackGame",
   },
+  
 ];
 
 export default function Projects() {
