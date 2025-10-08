@@ -6,7 +6,6 @@ import portfolioLogo from "../assets/portfolio.png";
 import mernAuthLogo from "../assets/MERN-auth-app.png";
 import gptflixLogo from "../assets/gptflix.png"
 import emsLogo from "../assets/EMS.png";
-import blackjackLogo from "../assets/blackjackgame.png";
 
 const projects = [
   {
@@ -42,7 +41,7 @@ const projects = [
   {
     title: "Blackjack Game",
     description: "A standalone application for playing Blackjack.",
-    image: blackjackLogo,
+    image: emsLogo,
     deploy: "https://github.com/Chetan96k/BlackJackGame",
   },
 
